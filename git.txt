@@ -1,0 +1,57 @@
+---------gi基础命令---------------
+git add 
+git commit
+git branch 分支名
+git branch -f 分支名 HEAD~数字/哈希码
+git branch -d 分支名 删除分支
+git checkout -b 分支名 新建并切换到分支
+git checkout 哈希码/HEAD~数字
+git rebase -i startpoint endpoint
+git merge 分支名  合并到当前分支
+git reset
+git revert
+git tag v1 c1
+git describe c1 返回距离最近的标签信息
+
+------------------------
+git clone
+git fetch 从远程仓库下载更新
+git pull==git fetch+git merge 从远程仓库下载更新并合并本地仓库
+git pull --rebase +git push
+git branch -u o/main foo
+git push 远程主机名 本地分支名：远程分支名
+git push 远程主机名 ：远程分支名 ---删除远程分支
+git fetch 远程主机名 远程分支名：本地分支名
+git fetch 远程主机名 ：本地分支名 ---创建本地分支
+git pull 远程主机名 远程分支名：本地分支名==git fetch 远程主机名 远程分支名：本地分支名+git merge到head处
+
+---------------------
+LINUX
+cd 改变目录
+cd.. 返回上一级目录
+pwd 显示当前目录途径
+ls 显示目录所以文件
+touch 新建文件
+rm 删除文件
+mkdir 新建文件夹
+rm -r 删除文件夹
+mv 移动文件 目标文件夹
+reset 初始化终端
+clear 清屏
+history 查看命令历史
+help 帮助
+exit 退出
+# 注释
+
+-----------------------
+git add . 添加所有文件到暂存区
+git status 查看所有文件状态
+git status 文件名 查看指定文件状态
+git commit -m 提交暂存区中的内容到本地仓库 -m 提交信息
+
+------------idea-------
+1.本地初始化仓库git init/克隆远程仓库git clone
+2.将.git文件剪切至需程序文件列表
+3.idea中add，commit，push
+
+
